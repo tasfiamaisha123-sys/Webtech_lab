@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Display</title>
+       <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+
+      
+        .product-container{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        
+        .product-box{
+            display: inline-block; /* show side by side */
+            width: 250px;
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        
+        .product-box:hover{
+            outline: 3px solid yellow;
+            outline-offset: 5px;
+        }
+
+        .product-box img{
+            width: 120px;
+            height: auto;
+        }
+
+        .price{
+            font-weight: bold;
+            color: green;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="product-container">
+
+    <!-- Product 1 -->
+    <div class="product-box">
+        <img src="https://th.bing.com/th/id/OIP.nv3TPmtqHn2ihNovMLED4QHaE1?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>High performance laptop for work and gaming.</p>
+        <p class="price">$900</p>
+        <a href="https://laptopmedia.com/highlights/all-new-lenovo-laptop-series-full-specs-features-and-prices/">Buy Now</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-box">
+        <img src="https://th.bing.com/th/id/OIP.fdxLkDf3e8sJ05I6rBrGRQHaIM?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>Noise cancelling wireless headphones.</p>
+        <p class="price">$150</p>
+        <a href="https://www.amazon.com/Apple-Headphones-Cancellation-Transparency-Personalized/dp/B0DGJKT2X9?th=1">Buy Now</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-box">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.HtonupHUq4tVSwWygpYFdAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p>Track fitness and notifications easily.</p>
+        <p class="price">$250</p>
+        <a href="#">Buy Now</a>
+    </div>
+
+</div>
+
+</head>
+
+    
+</body>
+</html>
