@@ -1,0 +1,74 @@
+<html>
+    <!--this is internal javascript  in head and body -->
+<head>
+    <link rel="stylesheet" type="text/css"href="style.css">
+    <!-- this one line is for external javascript -->
+    <script src = "script.js"></script>  
+<script>
+ var x=10.5;
+ var y=12.09;
+ sum= x + y  
+    </script>
+    </head>
+
+<body>
+<h1>My fiest web page </h1>
+<p>My first paragraph
+    <button onclick = "displayDate()">This time is ?</button>
+    </p><p id ="demo"></p>
+    <sript>
+        var para1 = document.getElementById("demo");
+        para1.innerHTML ="Javascript";
+        Document.write("using document");
+        <!--the whole lines above are shown as paraggraph cuz the script is linked to the p  -->
+    </sript>
+    <form onsubmit="return collectedData()";>
+    <table>
+        <tr>
+            <td>Email/Username</td>
+            <td>
+                <input type="text"
+                placeholder="Enter your Email / username"
+                id="email"
+                name=""
+                />
+            </td>
+            <!-- here we are doing some email validation -->
+            <td>
+                <p id ="EmailError" style="color: deep red"></p>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input
+                    type ="password"
+                    placeholder="Enter your password here"
+                    id="password"/></td></tr>
+
+                    <!-- here we are using password validation -->
+                     <td>
+                        <p id="passwordError" style="color:red"></p>
+                        </td></tr>
+                        <tr>
+                            
+                       <td>
+                            <button type="submit" style="color:blue" > submit </buttontype>
+                                
+                        </td></tr>
+                        </table>
+
+    </table>
+    </form>
+    </body>
+
+  
+
+
+
+
+
+
+
+</html>
