@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Global Tech Connect -Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+ </head>   
+
+<body>
+    <h1>Global Tech Connect</h1>
+    <h2>Event Registration</h2>
+    <form onsubmit="return collectData()">
+        <table>
+            <tr>
+                <td>Full Name</td>
+                <td>
+                    <input type="text" id="fullname" placeholder="Enter your Full name" />
+                </td>
+                <td>
+                    <p id="nameError" style="color: red;" >
+                    </p>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Professional Email</td>
+                <td>
+
+                    <input type="text" id="email" placeholder="Enter your email" />
+                </td>
+                <td>
+                    <p id="emailError" style="color:red"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Company/Institution (Optional)</td>
+                <td>
+                    <input type="text" id="company" placeholder="Enter your company" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Attendance Type</td>
+                <td>
+                    <input type="radio" name="attendance" value="Virtual">Virtual
+                    <input type="radio" name="attendance" value="In-Person"> In-Person
+
+                </td>
+                <td>
+                    <p id="attendanceError" style="color: red ;">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Register</button>
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+    <br>
+    <button id="analyticsBtn" onclick="toggleAnalytics()">Show Event Analytics</button>
+    <div id="analyticsPanel" style="display:none;">
+        <h3>Event Analytics</h3>
+      <p> Total Registrans: <span id="totalCount">0</span></p>
+    <p>Virtual: <span id="virtualCount">0</span> </p>
+    <p>In-Person:<span id="inPersonCount">0</span></p>
+</div>
+   <script src="task.js"></script>
+</body>
+</html>
