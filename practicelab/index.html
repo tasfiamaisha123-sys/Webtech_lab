@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Text Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<h1>Text Analysis Tool For writers</h1>
+<label for="userText">Enter your paragraph Below:</label>
+<textarea id="userText" placeholder="Paste or type any text here.."></textarea>
+<button id="Btn">Analyze Text</button>
+<div id="result" class="result-box">
+     <div class="stat-row">
+        <div class="stat-label">Total Characters:</div>
+        <div class="stat-vlaue" id="charDisplay">-</div>
+</div>
+    <div class="stat-row">
+        <div class="stat-label">Total Words:</div>
+        <div class="stat-vlaue" id="wordDisplay">-</div>
+</div>
+<div class="stat-row">
+    <div class="reverse-label">Reversed Text:</div>
+    <div id="reversedTextDisplay" class="reversed-content">
+        <span class="placeholder-text">No text analyzed yet. Click the button.</span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
